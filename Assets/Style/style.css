@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Khmer&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hanuman:wght@100;300;400;700;900&family=Khmer&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgb(228, 222, 222) !important;
+}
+
+header {
+    height: auto;
+    padding: 10px;
+    background-color: rgb(22, 22, 96);
+    font-family: 'Nunito';
+}
+
+nav {
+    height: auto;
+    background-color: white;
+    border-bottom: 3px solid rgb(22, 22, 96);
+    font-family: 'Nunito';
+}
+
+nav > .menu > .search {
+    width: 300px;
+    height: 40px;
+}
+
+nav > .menu > .search > input {
+    width: 250px;
+    height: 100%;
+    outline: none;
+}
+
+nav > .menu > .search > button {
+    width: 50px;
+    height: 100%;
+}
+
+.popular-book {
+    background-color: white;
+    color: rgb(11, 11, 188);
+    width: 95%;
+    margin: auto;
+}
+
+.Education-book {
+    background-color: white;
+    color: rgb(11, 11, 188);
+    width: 95%;
+    margin: auto;
+    font-family: 'Hanuman';
+}
+
+.science-book {
+    background-color: white;
+    color: rgb(11, 11, 188);
+    width: 95%;
+    margin: auto;
+    font-family: 'Hanuman';
+}
+
+/* footer */
+.row,
+.footer .row {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  font-family: 'Hanuman';
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer {
+  background-color: #232323;
+  padding: 70px 0;
+  color: #fff;
+  font-size: 14px;
+}
+
+.footer-col {
+  flex: 1;
+  min-width: 250px;
+  padding: 0 15px;
+  margin-bottom: 20px;
+}
+
+.footer-col h4 {
+  font-size: 18px;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
+  text-transform: capitalize;
+}
+
+.footer-col h4::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: #e91e63;
+  height: 2px;
+  width: 50px;
+}
+
+.footer-col ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.footer-col p {
+    color: #bbbbbb;
+}
+
+.footer-col ul li a {
+  font-size: 16px;
+  color: #bbbbbb;
+  text-decoration: none;
+  font-weight: 300;
+  transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+  color: #fff;
+  padding-left: 8px;
+}
+
+.social-links a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 10%;
+  transition: all 0.5s ease;
+  color: white;
+}
+
+.social-links a:first-child:hover {
+  background-color: blue;
+  color: white;
+}
+
+.social-links a:nth-child(2):hover {
+  background-color: white;
+  color: black;
+}
+
+.social-links a:nth-child(3):hover {
+  background-image: linear-gradient(to right, #f9ce34, #ee2a7b, #6228d7);
+  color: white;
+}
+
+.social-links a:nth-child(4):hover {
+  background-color: white;
+  color: rgb(34, 127, 227);
+}
