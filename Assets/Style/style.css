@@ -8,6 +8,13 @@
     scroll-behavior: smooth;
 }
 
+:root {
+  --bg-color: #191f36;
+  --snd-bf-color: #19376D;
+  --main-color: #59B2F4;
+  --text-color: #fff;
+}
+
 body {
     background-color: rgb(228, 222, 222) !important;
 }
@@ -48,6 +55,10 @@ nav > .menu > .search > button {
     width: 95%;
     margin: auto;
     font-family: 'Hanuman';
+}
+
+.popular-book > .product > .item {
+  scrollbar-width: none;
 }
 
 .popular-book .book .background {
