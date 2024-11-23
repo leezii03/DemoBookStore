@@ -44,25 +44,63 @@
     </header>
 
     <!-- navbar -->
-    <nav class="navbar navbar-expand-lg px-5 py-4 d-flex justify-content-between align-items-center position-sticky top-0" style="z-index: 1000;">
-        <a class="logo navbar-brand fw-bold" href="#">Logo</a>
-    
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-    
-        <div class="menu collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto me-5">
-                <li class="nav-item"><a class="nav-link active fw-bold link-primary" href="#">Home</a></li>
-                <li class="nav-item"><a class="nav-link fw-bold" href="#">All Book</a></li>
-                <li class="nav-item"><a class="nav-link fw-bold" href="#">Publisher</a></li>
-                <li class="nav-item"><a class="nav-link fw-bold" href="#">About Us</a></li>
-                <li class="nav-item"><a class="nav-link fw-bold" href="#">Contact</a></li>
-            </ul>
-    
-            <div class="search d-flex py-1 px-3 bg-white rounded-pill overflow-hidden border border-black">
-                <input type="text" class="border-0" placeholder="Search Item ..." aria-label="Search">
-                <button class="border-0 bg-white"><i class="fa-solid fa-magnifying-glass"></i></button>
+    <nav class="navbar navbar-expand-lg navbar-light px-5" style="position: sticky; top: 0; z-index: 13000; background-color: #0B2447;">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex align-items-center text-white" href="../Assets/Picture/logo2.jpg">
+                <img class="me-3 rounded-3" width="50" src="../Assets/Picture/logo1.png" alt="">
+                <h3>Storm Book Store</h3>
+            </a>
+            <div class="d-flex align-items-center">
+                <a class="nav-link text-white d-lg-none" href="#" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"><i class="bi bi-search me-2"></i></a>
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-xl">
+                        <div class="modal-content bg-dark">
+                            <div class="modal-header sticky-header border border-0 d-flex align-items-center">
+                                <div class="btn border border-0" data-bs-dismiss="modal"><i class="bi bi-caret-left-fill text-white fs-4"></i></div>
+                                <input type="search" class="form-control bg-dark text-white border border-0 border-bottom rounded-0 shadow-none" placeholder="Search...">
+                            </div>
+                            <div class="modal-body d-flex overflow-x-auto">
+                                <div class="btn bg-white text-dark rounded-pill px-3 py-1 me-2">All</div>
+                                <div class="btn bg-secondary text-white rounded-pill px-3 py-1 me-2">TVSeries</div>
+                                <div class="btn bg-secondary text-white rounded-pill px-3 py-1 me-2">Movie</div>
+                                <div class="btn bg-secondary text-white rounded-pill px-3 py-1 me-2">Anime</div>
+                                <div class="btn bg-secondary text-white rounded-pill px-3 py-1 me-2">Hollywood</div>
+                            </div>
+                            <div class="modal-footer">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="navbar-toggler border border-0 shadow-none navbar-dark text-white" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item pe-3">
+                        <a class="nav-link text-white px-2" aria-current="page" href=""><i
+                                class="bi bi-house me-2"></i>Home</a>
+                    </li>
+                    <li class="nav-item pe-3">
+                        <a class="nav-link text-white px-2" href=""><i class="bi bi-chat-right me-2"></i>FAQ</a>
+                    </li>
+                    <li class="nav-item pe-3">
+                        <a class="nav-link text-white px-2" href="#" id="open-popup"><i class="bi bi-chat-right-text me-2"></i>
+                            Request Drama</a>
+                    </li>
+                    <li class="nav-item pe-3">
+                        <a class="nav-link text-white px-2" href="#"><i class="bi bi-play-btn me-2"></i>Explore</a>
+                    </li>
+                    <li class="nav-item d-none d-lg-block">
+                        <a class="nav-link text-white px-2" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-search me-2"></i>Search</a>
+                    </li>
+                </ul>
             </div>
         </div>
     </nav>
@@ -85,7 +123,11 @@
                                 <!-- Gradient background -->
                                 <div class="background position-absolute w-100 h-100"></div>
                                 <!-- Price text -->
-                                <div class="price position-absolute text-white w-100 text-center pb-3 bottom-0 fs-4" style="z-index: 2;">21,000 riel</div>
+                                <div class="price position-absolute text-white w-100 text-center pb-3 bottom-0 fs-4" style="z-index: 2;">
+                                    <i class="bi bi-suit-heart"></i>
+                                    <p class="">21,000 riel</p>
+                                    <i class="bi bi-bag"></i>
+                                </div>
                             </div>
                         </div>
                     </a>
@@ -99,7 +141,11 @@
                                 <!-- Gradient background -->
                                 <div class="background position-absolute w-100 h-100"></div>
                                 <!-- Price text -->
-                                <div class="price position-absolute text-white w-100 text-center pb-3 bottom-0 fs-4" style="z-index: 2;">21,000 riel</div>
+                                <div class="price position-absolute text-white w-100 text-center pb-3 bottom-0 fs-4" style="z-index: 2;">
+                                    <i class="bi bi-suit-heart"></i>
+                                    <p class="">21,000 riel</p>
+                                    <i class="bi bi-bag"></i>
+                                </div>
                             </div>
                         </div>
                     </a>
@@ -113,7 +159,11 @@
                                 <!-- Gradient background -->
                                 <div class="background position-absolute w-100 h-100"></div>
                                 <!-- Price text -->
-                                <div class="price position-absolute text-white w-100 text-center pb-3 bottom-0 fs-4" style="z-index: 2;">21,000 riel</div>
+                                <div class="price position-absolute text-white w-100 text-center pb-3 bottom-0 fs-4" style="z-index: 2;">
+                                    <i class="bi bi-suit-heart"></i>
+                                    <p class="">21,000 riel</p>
+                                    <i class="bi bi-bag"></i>
+                                </div>
                             </div>
                         </div>
                     </a>
@@ -127,7 +177,11 @@
                                 <!-- Gradient background -->
                                 <div class="background position-absolute w-100 h-100"></div>
                                 <!-- Price text -->
-                                <div class="price position-absolute text-white w-100 text-center pb-3 bottom-0 fs-4" style="z-index: 2;">21,000 riel</div>
+                                <div class="price position-absolute text-white w-100 text-center pb-3 bottom-0 fs-4" style="z-index: 2;">
+                                    <i class="bi bi-suit-heart"></i>
+                                    <p class="">21,000 riel</p>
+                                    <i class="bi bi-bag"></i>
+                                </div>
                             </div>
                         </div>
                     </a>
@@ -141,7 +195,11 @@
                                 <!-- Gradient background -->
                                 <div class="background position-absolute w-100 h-100"></div>
                                 <!-- Price text -->
-                                <div class="price position-absolute text-white w-100 text-center pb-3 bottom-0 fs-4" style="z-index: 2;">21,000 riel</div>
+                                <div class="price position-absolute text-white w-100 text-center pb-3 bottom-0 fs-4" style="z-index: 2;">
+                                    <i class="bi bi-suit-heart"></i>
+                                    <p class="">21,000 riel</p>
+                                    <i class="bi bi-bag"></i>
+                                </div>
                             </div>
                         </div>
                     </a>
@@ -155,7 +213,11 @@
                                 <!-- Gradient background -->
                                 <div class="background position-absolute w-100 h-100"></div>
                                 <!-- Price text -->
-                                <div class="price position-absolute text-white w-100 text-center pb-3 bottom-0 fs-4" style="z-index: 2;">21,000 riel</div>
+                                <div class="price position-absolute text-white w-100 text-center pb-3 bottom-0 fs-4" style="z-index: 2;">
+                                    <i class="bi bi-suit-heart"></i>
+                                    <p class="">21,000 riel</p>
+                                    <i class="bi bi-bag"></i>
+                                </div>
                             </div>
                         </div>
                     </a>
@@ -169,7 +231,11 @@
                                 <!-- Gradient background -->
                                 <div class="background position-absolute w-100 h-100"></div>
                                 <!-- Price text -->
-                                <div class="price position-absolute text-white w-100 text-center pb-3 bottom-0 fs-4" style="z-index: 2;">21,000 riel</div>
+                                <div class="price position-absolute text-white w-100 text-center pb-3 bottom-0 fs-4" style="z-index: 2;">
+                                    <i class="bi bi-suit-heart"></i>
+                                    <p class="">21,000 riel</p>
+                                    <i class="bi bi-bag"></i>
+                                </div>
                             </div>
                         </div>
                     </a>
@@ -183,7 +249,11 @@
                                 <!-- Gradient background -->
                                 <div class="background position-absolute w-100 h-100"></div>
                                 <!-- Price text -->
-                                <div class="price position-absolute text-white w-100 text-center pb-3 bottom-0 fs-4" style="z-index: 2;">21,000 riel</div>
+                                <div class="price position-absolute text-white w-100 text-center pb-3 bottom-0 fs-4" style="z-index: 2;">
+                                    <i class="bi bi-suit-heart"></i>
+                                    <p class="">21,000 riel</p>
+                                    <i class="bi bi-bag"></i>
+                                </div>
                             </div>
                         </div>
                     </a>
